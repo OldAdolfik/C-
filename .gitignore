@@ -396,13 +396,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-*.Task2.1.1/obj/Debug/net6.0/Task2.1.1.GeneratedMSBuildEditorConfig.editorconfig
-*.Task2.1.1/obj/Debug/net6.0/Task2.1.1.assets.cache
-*.Task2.1/obj/Debug/net6.0/Task2.1.GeneratedMSBuildEditorConfig.editorconfig
-*.Task2.1/obj/Debug/net6.0/Task2.1.assets.cache
-*.Task2.2/obj/Debug/net6.0/Task2.2.GeneratedMSBuildEditorConfig.editorconfig
-*.Task2.2/obj/Debug/net6.0/Task2.2.assets.cache
-*.Task2.3/obj/Debug/net6.0/Task2.3.GeneratedMSBuildEditorConfig.editorconfig
-*.Task2.3/obj/Debug/net6.0/Task2.3.assets.cache
-*.Task2.4/obj/Debug/net6.0/Task2.4.GeneratedMSBuildEditorConfig.editorconfig
-*.Task2.4/obj/Debug/net6.0/Task2.4.assets.cache
