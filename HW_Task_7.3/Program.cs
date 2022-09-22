@@ -1,13 +1,9 @@
-﻿// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+﻿// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 // Например, задан массив:
-
 // 1 4 7 2
-
 // 5 9 2 3
-
 // 8 4 2 4
-
-// 17 -> такого числа в массиве нет
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
 Console.WriteLine("Введите количество строк: ");
 int a = Convert.ToInt32(Console.ReadLine());
@@ -40,15 +36,18 @@ void PrintArray(int[,] inputArray)
 int[,] NewArray = CreateRandom2Array(a, b);
 Console.WriteLine("Массив: ");
 PrintArray(NewArray);
-Console.WriteLine("Введите позицию элемента (строка, столбец): ");
-int c = Convert.ToInt32(Console.ReadLine());
-int d = Convert.ToInt32(Console.ReadLine());
-
-if(c>a || d>b) Console.WriteLine($"{c}, {d} -> такого числа в массиве нет");
-else 
+double sum = 0;
+int c = a;
+Console.Write("Среднее арифметическое каждого столбца: ");
+for (int j = 0; j < NewArray.GetLength(1); j++)
 {
-    Console.Write($"{c}, {d} -> ");
     a=c-1;
-    b=d-1;
-    Console.WriteLine(NewArray[a,b]);
+    sum = 0;
+    while(a>=0)
+    {
+        sum+=NewArray[a,j];
+        a--;
+    }
+    sum=sum/c;
+    Console.Write(sum + "; ");
 }
