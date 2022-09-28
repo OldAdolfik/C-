@@ -9,13 +9,13 @@ Console.WriteLine("Введите второе число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 int SumNumbers(int start, int end)
 {
-    if(start==end)return(start);
-    if(start<=end)
+    if (start == end) return (start);
+    if (start <= end)
     {
         int sum = 0;
-        sum=start+SumNumbers(start+1,end);
-        return(sum);
+        sum = start + SumNumbers(start + 1, end);
+        return (sum);
     }
-    else return(0);
+    else return (0);
 }
-Console.WriteLine(SumNumbers(M,N));
+Console.WriteLine(SumNumbers(M, N));
